@@ -15,7 +15,7 @@ export default class Navigation extends Component{
     }
     render(){
 
-        return Platform.OS == "ios"?(
+        return Platform.OS === "ios"?(
           <Navigator
             initialRoute={{component: Wrapper}}
             configureScene={() => Navigator.SceneConfigs.FloatFromRight}

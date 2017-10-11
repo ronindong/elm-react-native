@@ -46,7 +46,7 @@ export default class TabView extends Component {
   render(){
     return (
       <TabNavigator
-        hidesTabTouch={true}
+        hidesTabTouch={false}
         tabBarStyle={[styles.tabbar,
           (this.state.hideTabBar?styles.hide:{})
         ]}
@@ -86,6 +86,7 @@ const styles = StyleSheet.create({
       ]
     },
     tabStyle:{
-      padding: px2dp(4)
+      // padding: px2dp(4),
+        alignSelf:'center'
     }
 })
